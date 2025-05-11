@@ -6,6 +6,10 @@ import { FaUnsplash } from "react-icons/fa";
 import { FaIntercom } from "react-icons/fa";
 import { MdOutlineDescription } from "react-icons/md";
 import { TbBrandGrammarly } from "react-icons/tb";
+import { FaStar } from "react-icons/fa6";
+import { FiActivity } from "react-icons/fi";
+import { GrAnalytics } from "react-icons/gr";
+import { MdKeyboardCommandKey } from "react-icons/md";
 const Biccas = () => {
   const [isopen, setisopen] = useState(false);
   return (
@@ -57,7 +61,7 @@ const Biccas = () => {
       </nav>
       {isopen && (
         <>
-          <div className="flxed md:hidden w-full bg-gray-100 px-4">
+          <div className="flxed md:hidden w-full bg-gray-100 px-4 ">
             <ul className="gap-10 font-inter font-medium text-lg text-nav md:hidden">
               <li>
                 <a href="" className="hover:text-black duration-300">
@@ -96,15 +100,30 @@ const Biccas = () => {
       )}
       {/* banner part start */}
       <section className="bg-linear-to-bl from-white to-green-100">
-        <div className="container m-auto flex pt-32 px-4">
+        <div className="container m-auto flex flex-col pt-32 px-4 md:flex-row">
           <div>
-            <h1 className="text-[80px] font-bold font-inter w-[555px]">We’re here to Increase your Productivity</h1>
-            <img src="bannerimg.png" alt="" className="w-[476px] h-6 mt-8 mb-12"/>
-            <p className="text-lg font-medium font-inter w-[461px]">Let's make your work more organize and easily using the Taskio Dashboard with many of the latest featuresin managing work every day.</p>
+            <h1 className="text-[80px] font-bold font-inter w-[555px]">
+              We’re here to Increase your Productivity
+            </h1>
+            <img
+              src="bannerimg.png"
+              alt=""
+              className="w-[476px] h-6 mt-8 mb-12"
+            />
+            <p className="text-lg font-medium font-inter w-[461px]">
+              Let's make your work more organize and easily using the Taskio
+              Dashboard with many of the latest featuresin managing work every
+              day.
+            </p>
             <div className="flex gap-10 items-center mt-12">
-              <button className="bg-logo w-40 h-16  rounded-full text-lg font-medium font-inter text-white">Try free trial</button>
+              <button className="bg-logo w-40 h-16  rounded-full text-lg font-medium font-inter text-white">
+                Try free trial
+              </button>
               <div>
-                <button className="text-lg font-inter font-medium flex justify-between items-center gap-3.5"><FiPlayCircle className="w-10 h-10"/>View Demo</button>
+                <button className="text-lg font-inter font-medium flex justify-between items-center gap-3.5">
+                  <FiPlayCircle className="w-10 h-10" />
+                  View Demo
+                </button>
               </div>
             </div>
           </div>
@@ -115,21 +134,119 @@ const Biccas = () => {
       </section>
       {/* banner part end */}
       {/* collabs part start */}
-      <section className="bg-linear-to-r from-green-100 to-white pt-32 pb-32">
-        <h4 className="text-[40px] font-bold font-inter text-center">More than 25,000 teams use Collabs</h4>
+      <section className="bg-linear-to-r from-green-100 to-white pt-32 pb-32 ">
+        <h4 className="text-[40px] font-bold font-inter text-center">
+          More than 25,000 teams use Collabs
+        </h4>
         <div className="flex justify-center gap-[50px] pt-[60px]">
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav"><FaUnsplash className="w-8 h-7 text-nav"/>Unsplash</p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav"><RxNotionLogo className="w-8 h-7 text-nav"/>Notion</p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav"><FaIntercom className="w-8 h-7 text-nav"/>INTERCOM</p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav"><MdOutlineDescription  className="w-8 h-7 text-nav"/>descript</p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav"><TbBrandGrammarly  className="w-8 h-7 text-nav"/>grammarly</p>
+          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+            <FaUnsplash className="w-8 h-7 text-nav" />
+            Unsplash
+          </p>
+          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+            <RxNotionLogo className="w-8 h-7 text-nav" />
+            Notion
+          </p>
+          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+            <FaIntercom className="w-8 h-7 text-nav" />
+            INTERCOM
+          </p>
+          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+            <MdOutlineDescription className="w-8 h-7 text-nav" />
+            descript
+          </p>
+          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+            <TbBrandGrammarly className="w-8 h-7 text-nav" />
+            grammarly
+          </p>
         </div>
       </section>
       {/* collabs part end */}
       {/* support part start */}
-      <section> 
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 pt-[60px]">
-          <h3 className="w-[617px] text-[50px] font-semibold font-inter">How we support our pratner all over the world</h3>
+      <section>
+        <div className="container m-auto flex flex-col lg:flex-row pt-[60px] justify-between gap-12">
+          <div className="lg:w-1/2">
+            <h3 className="w-[617px] text-[50px] font-semibold font-inter">
+              How we support our pratner all over the world
+            </h3>
+            <p className="font-inter font-medium text-sm text-nav w-[644px] mt-8">
+              SaaS become a common delivery model for many business application,
+              including office software, messaging software, payroll processing
+              software, DBMS software, management software
+            </p>
+            <div className="flex gap-6 flex-col sm:flex-row ">
+              <div>
+                <div className="flex mt-[70px] text-amber-300 gap-0.5 mb-5">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                </div>
+                <p className="font-inter text-lg font-bold">4.9 / 5 rating</p>
+                <p className="font-inter font-bold text-lg text-nav mt-5">
+                  databricks
+                </p>
+              </div>
+              <div>
+                <div className="flex mt-[70px] text-amber-300 gap-0.5 mb-5">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <span className="text-star">
+                    <FaStar />
+                  </span>
+                </div>
+                <p className="font-inter text-lg font-bold">4.8 / 5 rating</p>
+                <p className="font-inter font-bold text-lg text-nav mt-5">
+                  Chainalysis
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-1/2">
+            <div className="flex items-start gap-4">
+            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+              <FiActivity className="w-[30px] h-[30px]" />
+            </div>
+            <div>
+              <h2 className="font-inter font-bold text-3xl text-text">
+                Publishing
+              </h2>
+              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
+                Plan, collaborate, and publishing your contetn that drivees
+                meaningful engagement and growth for your barnd
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 mt-[30px]">
+            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+              <GrAnalytics className="w-[30px] h-[30px]" />
+            </div>
+            <div>
+              <h2 className="font-inter font-bold text-3xl text-text">
+                Analytics
+              </h2>
+              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
+                Analyze your performance and create goegeous report
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 mt-[30px]">
+            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+              <MdKeyboardCommandKey className="w-[30px] h-[30px]" />
+            </div>
+            <div>
+              <h2 className="font-inter font-bold text-3xl text-text">
+                Engagement
+              </h2>
+              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
+                Quiuckly navigate you anda engage with your adience
+              </p>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
       {/* support part end */}
