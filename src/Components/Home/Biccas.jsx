@@ -163,7 +163,7 @@ const Biccas = () => {
       </section>
       {/* collabs part end */}
       {/* support part start */}
-      <section>
+      <section className="bg-bg">
         <div className="container m-auto flex flex-col lg:flex-row pt-[60px] justify-between gap-12">
           <div className="lg:w-1/2">
             <h3 className="w-[617px] text-[50px] font-semibold font-inter">
@@ -207,49 +207,108 @@ const Biccas = () => {
           </div>
           <div className="lg:w-1/2">
             <div className="flex items-start gap-4">
-            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
-              <FiActivity className="w-[30px] h-[30px]" />
+              <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+                <FiActivity className="w-[30px] h-[30px]" />
+              </div>
+              <div>
+                <h2 className="font-inter font-bold text-3xl text-text">
+                  Publishing
+                </h2>
+                <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
+                  Plan, collaborate, and publishing your contetn that drivees
+                  meaningful engagement and growth for your barnd
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="font-inter font-bold text-3xl text-text">
-                Publishing
-              </h2>
-              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
-                Plan, collaborate, and publishing your contetn that drivees
-                meaningful engagement and growth for your barnd
-              </p>
+            <div className="flex items-start gap-4 mt-[30px]">
+              <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+                <GrAnalytics className="w-[30px] h-[30px]" />
+              </div>
+              <div>
+                <h2 className="font-inter font-bold text-3xl text-text">
+                  Analytics
+                </h2>
+                <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
+                  Analyze your performance and create goegeous report
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex items-start gap-4 mt-[30px]">
-            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
-              <GrAnalytics className="w-[30px] h-[30px]" />
+            <div className="flex items-start gap-4 mt-[30px]">
+              <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
+                <MdKeyboardCommandKey className="w-[30px] h-[30px]" />
+              </div>
+              <div>
+                <h2 className="font-inter font-bold text-3xl text-text">
+                  Engagement
+                </h2>
+                <p className="w-[428px] font-medium text-lg text-nav mt-2.5 mb-[60px]">
+                  Quiuckly navigate you anda engage with your adience
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="font-inter font-bold text-3xl text-text">
-                Analytics
-              </h2>
-              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
-                Analyze your performance and create goegeous report
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4 mt-[30px]">
-            <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
-              <MdKeyboardCommandKey className="w-[30px] h-[30px]" />
-            </div>
-            <div>
-              <h2 className="font-inter font-bold text-3xl text-text">
-                Engagement
-              </h2>
-              <p className="w-[428px] font-medium text-lg text-nav mt-2.5">
-                Quiuckly navigate you anda engage with your adience
-              </p>
-            </div>
-          </div>
           </div>
         </div>
       </section>
       {/* support part end */}
+      {/* feature part start*/}
+      <section>
+        <div className="container m-auto">
+          <div className="flex items-center justify-between pt-32">
+            <p className="w-[331px] text-[50px] font-inter font-semibold">
+              Our Features you cab get
+            </p>
+            <p className="w-[461px] text-lg font-inter font-medium text-nav ">
+              We offer a variety of interesting features that you can help
+              increase yor productivity at work and manage your projrct esaly
+            </p>
+            <button className="w-[162px] h-[66px] bg-logo rounded-full">
+              Get Started
+            </button>
+          </div>
+          <div className="flex gap-11 justify-center">
+            <div className="pt-[75px]">
+              <img
+                src="/feature1.png"
+                alt=""
+                className="w-[364px] h-[430px] pb-8"
+              />
+              <h5 className="text-3xl font-inter font-semibold">
+                Collboration Teams
+              </h5>
+              <p className="w-[340px] text-lg font-inter font-medium text-nav mt-5">
+                Here you can handle projects together with team virtually
+              </p>
+            </div>
+            <div className="pt-[75px]">
+              <img
+                src="/feature2.png"
+                alt=""
+                className="w-[364px] h-[430px] pb-8"
+              />
+              <h5 className="text-3xl font-inter font-semibold">
+                Collboration Teams
+              </h5>
+              <p className="w-[340px] text-lg font-inter font-medium text-nav mt-5">
+                Here you can handle projects together with team virtually
+              </p>
+            </div>
+            <div className="pt-[75px]">
+              <img
+                src="/feature3.png"
+                alt=""
+                className="w-[364px] h-[430px] pb-8"
+              />
+              <h5 className="text-3xl font-inter font-semibold">
+                Collboration Teams
+              </h5>
+              <p className="w-[340px] text-lg font-inter font-medium text-nav mt-5">
+                Here you can handle projects together with team virtually
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* feature part end */}
     </>
   );
 };
