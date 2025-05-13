@@ -10,11 +10,12 @@ import { FaStar } from "react-icons/fa6";
 import { FiActivity } from "react-icons/fi";
 import { GrAnalytics } from "react-icons/gr";
 import { MdKeyboardCommandKey } from "react-icons/md";
+import { FaCheck } from "react-icons/fa6";
 const Biccas = () => {
   const [isopen, setisopen] = useState(false);
   return (
     <>
-      <nav className="bg-linear-to-bl from-green-100 to-white">
+      <nav className="bg-gradient-to-r from-green-100 to-white">
         <div className="container m-auto flex justify-between items-center sm:px-[60px] px-4">
           <h3 className="text-[50px] text-logo font-semibold font-inter">
             Biccas
@@ -99,7 +100,7 @@ const Biccas = () => {
         </>
       )}
       {/* banner part start */}
-      <section className="bg-linear-to-bl from-white to-green-100">
+      <section className="bg-gradient-to-l from-green-100 to-white">
         <div className="container m-auto flex flex-col pt-32 px-4 md:flex-row">
           <div>
             <h1 className="text-[80px] font-bold font-inter w-[555px]">
@@ -134,31 +135,33 @@ const Biccas = () => {
       </section>
       {/* banner part end */}
       {/* collabs part start */}
-      <section className="bg-linear-to-r from-green-100 to-white pt-32 pb-32 ">
-        <h4 className="text-[40px] font-bold font-inter text-center">
-          More than 25,000 teams use Collabs
-        </h4>
-        <div className="flex justify-center gap-[50px] pt-[60px]">
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
-            <FaUnsplash className="w-8 h-7 text-nav" />
-            Unsplash
-          </p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
-            <RxNotionLogo className="w-8 h-7 text-nav" />
-            Notion
-          </p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
-            <FaIntercom className="w-8 h-7 text-nav" />
-            INTERCOM
-          </p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
-            <MdOutlineDescription className="w-8 h-7 text-nav" />
-            descript
-          </p>
-          <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
-            <TbBrandGrammarly className="w-8 h-7 text-nav" />
-            grammarly
-          </p>
+      <section className="bg-gradient-to-l from-green-100 to-white pt-32 pb-32 ">
+        <div className="container m-auto">
+          <h4 className="text-[40px] font-bold font-inter text-center">
+            More than 25,000 teams use Collabs
+          </h4>
+          <div className="flex justify-center gap-[50px] pt-[60px]">
+            <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+              <FaUnsplash className="w-8 h-7 text-nav" />
+              Unsplash
+            </p>
+            <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+              <RxNotionLogo className="w-8 h-7 text-nav" />
+              Notion
+            </p>
+            <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+              <FaIntercom className="w-8 h-7 text-nav" />
+              INTERCOM
+            </p>
+            <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+              <MdOutlineDescription className="w-8 h-7 text-nav" />
+              descript
+            </p>
+            <p className="flex justify-center items-center text-3xl font-semibold font-inter text-nav">
+              <TbBrandGrammarly className="w-8 h-7 text-nav" />
+              grammarly
+            </p>
+          </div>
         </div>
       </section>
       {/* collabs part end */}
@@ -205,7 +208,7 @@ const Biccas = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2">
+          <div>
             <div className="flex items-start gap-4">
               <div className="w-[60px] h-[60px] bg-white shadow text-green-300 flex justify-center items-center">
                 <FiActivity className="w-[30px] h-[30px]" />
@@ -251,7 +254,7 @@ const Biccas = () => {
       </section>
       {/* support part end */}
       {/* feature part start*/}
-      <section>
+      <section className="pb-[130px]">
         <div className="container m-auto">
           <div className="flex items-center justify-between pt-32">
             <p className="w-[331px] text-[50px] font-inter font-semibold">
@@ -309,6 +312,77 @@ const Biccas = () => {
         </div>
       </section>
       {/* feature part end */}
+      {/* benifit part start */}
+      <section className="bg-gradient-to-l from-green-100 to-white pb-[130px]">
+        <div className="container m-auto pt-[130px] grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <h6 className="w-[429px] text-[50px] font-bold font-inter">
+              What Benifit Will You Get
+            </h6>
+            <div>
+              <div className="flex items-center gap-5 mt-[50px]">
+                <div className="w-8 h-8 bg-icon flex items-center justify-center text-white rounded-full">
+                  <FaCheck />
+                </div>
+                <div>
+                  <p>Free Consulting With Experet Saving Money</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 mt-[50px]">
+                <div className="w-8 h-8 bg-icon flex items-center justify-center text-white rounded-full">
+                  <FaCheck />
+                </div>
+                <div>
+                  <p>Online Banking</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 mt-[50px]">
+                <div className="w-8 h-8 bg-icon flex items-center justify-center text-white rounded-full">
+                  <FaCheck />
+                </div>
+                <div>
+                  <p>Investment Report Every Month</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 mt-[50px]">
+                <div className="w-8 h-8 bg-icon flex items-center justify-center text-white rounded-full">
+                  <FaCheck />
+                </div>
+                <div>
+                  <p>Saving Money For The Future</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 mt-[50px]">
+                <div className="w-8 h-8 bg-icon flex items-center justify-center text-white rounded-full">
+                  <FaCheck />
+                </div>
+                <div>
+                  <p>Online Transection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="/benefit.png" alt="" />
+        </div>
+      </section>
+      {/* benifit part end */}
+      {/* Plan part start */}
+      <section className="bg-gradient-to-l from-green-100 to-white pt-[130px]">
+        <div className="container m-auto flex flex-col justify-center items-center">
+          <div className="text-center">
+            <h2 className="w-[492px] text-[50px] font-inter font-bold">
+              Choose Plan
+            </h2>
+            <p className="w-[492px] text-[50px] font-inter font-bold text-center">
+              That’s Right For You
+            </p>
+            <p className="text-lg font-inter font-bold text-nav mt-10">Choose plan that works best for you, feel free to contact us</p>
+          </div>
+        
+
+        </div>
+      </section>
+      {/* Plan part end */}
     </>
   );
 };
