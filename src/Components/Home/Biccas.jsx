@@ -636,37 +636,37 @@ const Biccas = () => {
               </button>
             </div>
           </div>
-          <div>
-            <h6 className="text-lg font-inter font-medium text-white">
+          <div className="space-y-2">
+            <h6 className="text-lg font-inter font-medium text-white mb-[30px]">
               Support
             </h6>
-            <ul>
-              <li>Help centre</li>
-              <li>Account information</li>
-              <li>About</li>
-              <li>Contact us</li>
+            <ul className="text-nav">
+              <li className="mb-5">Help centre</li>
+              <li className="mb-5">Account information</li>
+              <li className="mb-5">About</li>
+              <li className="mb-5">Contact us</li>
             </ul>
           </div>
           <div>
-            <h6 className="text-lg font-inter font-medium text-white">
+            <h6 className="text-lg font-inter font-medium text-white mb-[30px]">
               Help and Solution
             </h6>
-            <ul>
-              <li>Talk to support</li>
-              <li>Support docs</li>
-              <li>System status</li>
-              <li>Covid responde</li>
+            <ul className="text-nav">
+              <li className="mb-5">Talk to support</li>
+              <li className="mb-5">Support docs</li>
+              <li className="mb-5">System status</li>
+              <li className="mb-5">Covid responde</li>
             </ul>
           </div>
-          <div>
-            <h6 className="text-lg font-inter font-medium text-white">
+          <div className="space-y-2">
+            <h6 className="text-lg font-inter font-medium text-white mb-[30px]">
               Product
             </h6>
-            <ul>
-              <li>Update</li>
-              <li>Security</li>
-              <li>Beta test</li>
-              <li>Pricing product</li>
+            <ul className="text-nav">
+              <li className="mb-5">Update</li>
+              <li className="mb-5">Security</li>
+              <li className="mb-5">Beta test</li>
+              <li className="mb-5">Pricing product</li>
             </ul>
           </div>
            </div>
