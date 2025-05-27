@@ -11,6 +11,8 @@ import { FiActivity } from "react-icons/fi";
 import { GrAnalytics } from "react-icons/gr";
 import { MdKeyboardCommandKey } from "react-icons/md";
 import { FaCheck } from "react-icons/fa6";
+import { FaRegCirclePlay } from "react-icons/fa6";
+import { FaLongArrowAltRight } from "react-icons/fa";
 const Biccas = () => {
   const [isopen, setisopen] = useState(false);
   return (
@@ -550,49 +552,139 @@ const Biccas = () => {
       </section>
       {/* Plan part end */}
       {/* saying part start */}
-      <section className="bg-footer">
-        <div className="container m-auto py-[130px] grid grid-cols-1 md:grid-cols-2">
+      <section className="bg-footer text-white">
+        <div className="container mx-auto py-[130px] grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+          {/* Left Column */}
           <div>
-            <h4 className="text-[50px] w-[444px] font-inter font-semibold text-white mr-[130px]">
-              People are Saying About DoWhith
+            <h4 className="text-[50px] max-w-[444px] font-inter font-semibold text-white">
+              People are Saying About <span className="text-logo">DoWhith</span>
             </h4>
-            <p className="text-lg font-inter font-medium text-nav w-[461px] mt-5">
+            <p className="text-lg font-medium text-nav max-w-[461px] mt-5">
               Everything you need to accept to payment and grow your money of
               manage anywhere on planet
             </p>
-            <div class="relative w-[45px] h-[38px] py-10">
-              <div class="absolute inset-0 transform -skew-x-12 flex justify-center items-center gap-1">
-                <div class="w-2 h-5 bg-reg transform -skew-x-12"></div>
-                <div class="w-2 h-5 bg-reg transform -skew-x-12"></div>
+            <div className="relative w-[45px] h-[38px] my-6">
+              <div className="absolute inset-0 transform -skew-x-12 flex justify-center items-center gap-1">
+                <div className="w-2 h-5 bg-reg transform -skew-x-12" />
+                <div className="w-2 h-5 bg-reg transform -skew-x-12" />
               </div>
             </div>
-            <p className="w-[461px] text-lg font-inter font-medium text-nav flex flex-col">
-              I am very helped by this E-wallet application , my days are very
-              easy to use this application and its very helpful in my life ,
+
+            <p className="text-lg font-medium text-nav max-w-[461px]">
+              I am very helped by this E-wallet application, my days are very
+              easy to use this application and it’s very helpful in my life,
               even I can pay a short time 😍
-              <span className="mt-10">_ Aria Zinanrio</span>
+              <span className="block mt-10">Aria Zinanrio</span>
             </p>
+
+            {/* Avatars and Play Button */}
+            <div className="mt-10 flex gap-5 items-center">
+              <img src="/Ellipse 54.png" alt="avatar1" />
+              <img src="/Ellipse 55.png" alt="avatar2" />
+              <img src="/Ellipse 56.png" alt="avatar3" />
+              <img src="/Ellipse 57.png" alt="avatar4" />
+              <FaRegCirclePlay className="w-[66px] h-[66px] text-white" />
+            </div>
           </div>
-          <div className="bg-from pb-[66px]">
-            <img src="/Vector.png" alt="Vector" className="mx-auto mt-10"/>
-            <h5 className="text-center text-3xl font-inter font-medium text-white mt-2.5">
+
+          {/* Right Column - Form */}
+          <div className="bg-from rounded-xl p-6">
+            <img src="/Vector.png" alt="Vector" className="mx-auto mt-10" />
+            <h5 className="text-center text-3xl font-inter font-medium mt-2.5">
               Get Started
             </h5>
-            <form action="#" className="px-[86px]">
-              <div className="mt-2.5">
-                <label htmlFor="#" className="block text-lg font-inter font-medium text-white">Email</label>
-                <input type="email" className="bg-white mt-5 text-[14px] font-medium font-inter w-[440px] py-[17px] pl-5 rounded-[10px] text-nav" placeholder="Enter your email"/>
+            <form action="#" className="px-6 mt-6">
+              <label className="block text-lg font-medium">Email</label>
+              <input
+                type="email"
+                className="bg-white mt-2 text-sm font-medium w-full py-[17px] pl-5 rounded-[10px] text-nav"
+                placeholder="Enter your email"
+              />
+
+              <label className="block text-lg font-medium mt-5">Message</label>
+              <textarea
+                className="bg-white mt-2 text-nav w-full pt-4 pb-10 pl-5 rounded-[10px]"
+                placeholder="What are you say?"
+              />
+
+              <button className="bg-logo text-base font-semibold py-5 px-12 mt-5 rounded-[10px] w-full">
+                Request Demo
+              </button>
+
+              <div className="text-right mt-2 text-[14px] font-medium text-nav">
+                or Start Free Trial
               </div>
-              <div>
-                <label htmlFor="#" className="block text-lg font-inter font-medium text-white mt-5">Message</label>
-                <input type="text" className="bg-white mt-5 text-nav pt-5 pb-[43px] w-[440px] pl-5 rounded-[10px]" placeholder="What are you say ?"/>
-              </div>
-              <button className="bg-logo text-base font-semibold font-inter py-[20px] px-[164px] mt-5 rounded-[10px] text-white">Request Demo</button>
             </form>
           </div>
         </div>
+        {/* saying part end */}
+        {/* Footer part start */}
+        <div className="container mx-auto px-6 mt-20 grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="md:col-span-2">
+            <h4 className="text-[50px] font-semibold text-logo">Biccas</h4>
+            <p className="text-lg font-medium text-nav mb-4">
+              Get started now try our product
+            </p>
+            <div className="flex items-center w-[280px] h-[50px] rounded-full border border-nav px-4">
+              <input
+                type="email"
+                placeholder="Enter your email here"
+                className="flex-grow bg-transparent outline-none text-white placeholder-gray-400"
+              />
+              <button className="ml-2 flex items-center justify-center w-8 h-8 bg-green-500 rounded-full">
+                <FaLongArrowAltRight />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h6 className="text-lg font-inter font-medium text-white">
+              Support
+            </h6>
+            <ul>
+              <li>Help centre</li>
+              <li>Account information</li>
+              <li>About</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-lg font-inter font-medium text-white">
+              Help and Solution
+            </h6>
+            <ul>
+              <li>Talk to support</li>
+              <li>Support docs</li>
+              <li>System status</li>
+              <li>Covid responde</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-lg font-inter font-medium text-white">
+              Product
+            </h6>
+            <ul>
+              <li>Update</li>
+              <li>Security</li>
+              <li>Beta test</li>
+              <li>Pricing product</li>
+            </ul>
+          </div>
+           </div>
+          <footer className="container m-auto mt-20 pb-10">
+            <div class="text-sm text-white flex flex-col md:flex-row justify-between items-center pt-4">
+            <div>© 2023 Biccas Inc. Copyright and rights reserved</div>
+            <div class="space-x-4">
+              <a href="#" class="hover:text-white">
+                Terms and Conditions
+              </a>
+              <a href="#" class="hover:text-white">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+          </footer>
       </section>
-      {/* saying part end */}
+      {/* Footer part end */}
     </>
   );
 };
